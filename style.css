@@ -12,6 +12,7 @@
   html {
     font-family: "Nunito";
     font-size: 12px;
+    font-weight: 600;
   }
   
   section {
@@ -21,7 +22,8 @@
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-color: rgb(26, 26, 27);
+    background: rgb(186,251,221);
+    background: linear-gradient(45deg, rgba(186,251,221,1) 0%, rgba(57,57,57,1) 100%);  
   }
   .container {
     width: 100%;
@@ -56,7 +58,7 @@
     width: 8%;
     font-size: 3rem;
     margin-bottom: -8px;
-    color: rgb(75, 75, 75);
+    color: rgb(100, 168, 80);
     display: inline-block;
   }
   .search-result {
@@ -69,7 +71,8 @@
   .item {
     width: 100%;
     border-radius: 8px;
-    background-color: rgb(37, 37, 37);
+    background: rgb(57,57,57);
+    background: linear-gradient(45deg, rgba(57,57,57,1) 0%, rgba(136,150,119,1) 50%, rgba(57,57,57,1) 100%);
     padding: 15px;
     overflow: hidden;
   }
@@ -93,4 +96,51 @@
   }
   .view-button{
     text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #8bd17d;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    align-self: flex-start;
   }
+
+.item-data{
+  color: whitesmoke;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: .05rem;
+  line-height: 2rem;
+}
+
+.container.initial .brand{
+  font-size: 7rem;
+
+}
+.container.initial form{
+  max-width: 800px;
+
+}
+.container.initial form input{
+  padding: 20px;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px){
+  .search-result{
+    grid-gap: 10px;
+  }
+  .container.initial .brand{
+    font-size: 4rem;
+  }
+  .container.initial form{
+    max-width: 500px;
+  }
+  .container.initial form input{
+    padding: 10px;
+    font-size: 2rem;
+  }
+}
